@@ -1,4 +1,4 @@
 # Raytracing
-Custom built raytracer built in C++.
+Custom raytracer built in C++.
 
 <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html#overview"> Reference <a>
