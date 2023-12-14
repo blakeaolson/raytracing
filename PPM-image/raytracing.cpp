@@ -1,4 +1,6 @@
 #include <iostream>
+#include "../color.h"
+#include "../vec3.h"
 
 int main() {
 
@@ -9,11 +11,8 @@ int main() {
   for (int i = 0; i < image_height; ++i){
     std::clog << "\rScanlines remaining: " << (image_height - i) << " " << std::flush;
     for (int j = 0; j < image_width; ++j){
-      int r = i;
-      int g = j;
-      int b = 0;
-
-      std::cout << r << " " << g << " " << b << "\n";
+      vec3 color(double(i) / (image_width - 1), double(j) / (image_height - 1), 0);
+      write_color(std::cout, color);
     }
   }
 }
